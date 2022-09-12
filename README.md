@@ -4,7 +4,7 @@
 
 [![Language](https://img.shields.io/badge/language-python-blue?&style=plastic)](https://www.python.org)
 [![Language version](https://img.shields.io/badge/version-3.10-red?&style=plastic)](https://www.python.org/downloads/)
-![GitHub repo size](https://img.shields.io/badge/repo%20size-122%20kB-pink?&style=plastic)
+![GitHub repo size](https://img.shields.io/badge/repo%20size-83%20kB-pink?&style=plastic)
 
 ---
 
