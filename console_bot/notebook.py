@@ -27,13 +27,13 @@ class InputError:
         # except IndexError:
         #     return 'Error! Give me name and phone or birthday please!'
         except KeyError:
-            return 'Error! Note not found!'
+            print('Error! Note not found!')
         except ValueError:
-            return 'Error! Incorrect argument!'
+            print('Error! Incorrect argument!')
         except DateIsNotValid:
-            return 'Error! Date is not valid'
+            print('Error! Date is not valid')
         except IndexError:
-            return 'Error! Incorrect argument!'
+            print('Error! Incorrect argument!')
 
 
 class Field:
