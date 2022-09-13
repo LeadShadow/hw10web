@@ -9,8 +9,6 @@ import datetime
 import re
 import src.dml_note as dml
 
-N = 3  # Кількість нотаток на сторінці
-
 
 class DateIsNotValid(Exception):
     """You cannot add an invalid date"""
