@@ -1,8 +1,11 @@
 from datetime import datetime
-
+import redis
+from redis_lru import RedisLRU
 from mongoengine import *
 
 connect(host='mongodb://localhost:27017/test')
+client = redis.StrictRedis(host='localhost', port=6379, password=None)
+cache = RedisLRU(client)
 
 
 class Addressbook(Document):

@@ -112,7 +112,7 @@ def add_date(*args):
 
 def show_all(*args):
     """Повертає всі нотатки"""
-    dml.show_all()
+    print(dml.show_all())
 
 
 def show_archive(*args):

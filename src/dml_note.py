@@ -1,4 +1,4 @@
-from src.models import Note, Archived, Tags
+from src.models import Note, Archived, Tags, cache
 
 
 def add_note(text):
