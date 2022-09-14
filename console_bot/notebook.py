@@ -9,8 +9,6 @@ import datetime
 import re
 import src.dml_note as dml
 
-N = 3  # Кількість нотаток на сторінці
-
 
 class DateIsNotValid(Exception):
     """You cannot add an invalid date"""
@@ -114,7 +112,7 @@ def add_date(*args):
 
 def show_all(*args):
     """Повертає всі нотатки"""
-    dml.show_all()
+    print(dml.show_all())
 
 
 def show_archive(*args):

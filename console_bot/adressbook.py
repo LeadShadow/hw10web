@@ -319,25 +319,24 @@ def start_ab():
     print('\n\033[033mWelcome to the address book!\033[0m')
     print(f"\033[032mType command or '?' for help \033[0m\n")
     while True:
-        user_command = input('>>> ')
-        # user_command = prompt('Enter command >>> ',
-        #                       history=FileHistory('history.txt'),
-        #                       auto_suggest=AutoSuggestFromHistory(),
-        #                       completer=Completer,
-        #                       lexer=RainbowLexer()
-        #                       )
+        user_command = prompt('Enter command >>> ',
+                              history=FileHistory('history.txt'),
+                              auto_suggest=AutoSuggestFromHistory(),
+                              completer=Completer,
+                              lexer=RainbowLexer()
+                              )
         command, data = command_parser(user_command, COMMANDS_A)
         command(*data), '\n'
         if command is goodbye:
             break
 
 
-# Completer = NestedCompleter.from_nested_dict({'help': None, 'hello': None, 'good bye': None, 'exit': None,
-#                                               'close': None, '?': None, '.': None, 'birthday': None,
-#                                               'days to birthday': None, 'add': None,
-#                                               'show all': None, 'change': None, 'del': {'phone': None, 'email': None}, 'delete': None,
-#                                               'clear': None, 'email': None, 'find': None, 'search': None,
-#                                               'address': None})
+Completer = NestedCompleter.from_nested_dict({'help': None, 'hello': None, 'good bye': None, 'exit': None,
+                                              'close': None, '?': None, '.': None, 'birthday': None,
+                                              'days to birthday': None, 'add': None,
+                                              'show all': None, 'change': None, 'del': {'phone': None, 'email': None}, 'delete': None,
+                                              'clear': None, 'email': None, 'find': None, 'search': None,
+                                              'address': None})
 
 if __name__ == "__main__":
     start_ab()
